@@ -65,9 +65,7 @@ The task is to:
 
   - **`Dockerfile`**: Defines the container image, environment setup, and how to run the code inside Docker.
 
-  - **`README.md`**: Contains instructions on how to build, run, and test the solution.
-
-  - **`approach_explanation.md`**: Explains the methodology used — document processing, ranking strategy, relevance logic, etc.
+  - **`README.md`**: Contains instructions on how to build, run, and test the solution. Explains the methodology used — document processing, ranking strategy, relevance logic, etc.
 
 ---
 
@@ -81,7 +79,5 @@ docker build --platform linux/amd64 -t mysolution:round1b .
 ```bash
 docker run --rm -v "$(pwd)/input:/app/input" -v "$(pwd)/output:/app/output" --network none mysolution:round1b python3 processor.py /app/input/challenge1b_input.json /app/output/result.json
 
-### 📤 Result
-```bash
-output/challenge1b_output.json
+
 
